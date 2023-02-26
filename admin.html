@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Voting Platform | GST FORCE </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+          rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/about-img.jpg">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body id="body">
+
+<!--==========================
+  Top Bar
+============================-->
+<section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+        <div class="contact-info float-left">
+            <i class="fa fa-envelope-o"></i> info@gstforce.in
+            <i class="fa fa-phone"></i> +9111-47525539/49
+        </div>
+        <div class="social-links float-right">
+            <a href="https://www.linkedin.com/company/gstforce/" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/gstforce" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://wa.me/qr/HAXHYC26HZD7E1" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/@gstforce" target="_blank" rel="noopener noreferrer" class="twitter"><i class="fa fa-youtube"></i></a>        </div>
+    </div>
+</section>
+
+<!--==========================
+  Header
+============================-->
+<header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <h1><a href="http://evoting.gstforce.in" class="scrollto"> E-Voting Platform <span></span></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="http://evoting.gstforce.in"
+                       id="Home" class="btn-get-started scrollto">Home</a></li>
+                <li><a href="http://evoting.gstforce.in/AboutUs"
+                       class="btn-get-started scrollto">About Us</a></li>
+                <li><a href="http://evoting.gstforce.in/TermsofUse"
+                       class="btn-get-started scrollto">Terms of Use</a></li>
+                <li><a href="http://evoting.gstforce.in/ContactUs"
+                       class="btn-get-started scrollto">Contact Us</a></li>
+                <li><a href="Login.html"
+                       class="btn-get-started scrollto">Login</a></li>
+            </ul>
+        </nav><!-- #nav-menu-container -->
+    </div>
+</header><!-- #header -->
+
+<main id="main">
+    <center><div style="margin:100px">
+        <span id="user" class="message">Hello, < email-id ></Email-id></span>
+
+        <br/>
+        <span id="result" class="message">No of Votes Registered </span>
+        <br/>
+        <input type="file" id="selectFiles" value="Import" /><br /><br/>
+        <button id="CreateElection" class="btn btn-dark">Create Election</button>
+        <button id="Logout" class="btn btn-danger" >Logout</button>
+
+    </div></center>
+</main>
+
+
+
+
+<!--==========================
+  Footer
+============================-->
+<footer id="footer-other">
+    <div class="container">
+        <div class="copyright">
+            Copyright &copy; 2016 to 2023 <strong> <a href="https://gstforce.in" target="_blank" rel="noopener noreferrer"><b>GST Force</b></a></strong> | All Rights Reserved
+        </div>
+        <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+            -->
+        </div>
+    </div>
+</footer><!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript libraries -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="lib/sticky/sticky.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="js/main.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+    import { getDatabase,ref, set,child,get,update } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCI_oLJkmpAnFnbIIK43BwZ_2jxfmyVU2c",
+        authDomain: "evoting-fee1e.firebaseapp.com",
+        databaseURL: "https://evoting-fee1e-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "evoting-fee1e",
+        storageBucket: "evoting-fee1e.appspot.com",
+        messagingSenderId: "62575358156",
+        appId: "1:62575358156:web:0a6720dc4d31b429659269"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    import {onAuthStateChanged, signOut}
+        from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+
+    onAuthStateChanged(auth, (user) => {
+        if(!user){
+            location.replace("Login.html")
+        }else{
+            document.getElementById("user").innerHTML = "Hello, "+user.email
+            writeUserData(user.uid,user.email);
+            displayResult();
+        }
+    })
+    function displayResult(){
+        let resultStr="";
+        get(child(dbRef, 'votes')).then((votes)=>{
+            votes.forEach((event)=>{
+                event.forEach((election)=>{
+                    console.log()
+                    election.forEach((option)=>{
+                        console.log(option.val())
+                        resultStr+=Object.keys(option.val()).length
+                        resultStr+='\n'
+                    })
+
+                })
+            })
+        }).then(()=>{
+            document.getElementById("result").innerHTML +=":"+ resultStr;
+        })
+
+    }
+    function logout(){
+        signOut(auth)
+    }
+    document.getElementById("Logout").addEventListener("click", (event) => {
+        logout();
+    })
+
+    const db = getDatabase(app);
+    const dbRef = ref(db);
+    function writeUserData(userId, email) {
+        isNewUser(userId).then((val)=>{
+            if(val){
+                set(ref(db, 'users/' + userId), {
+                    email: email,
+                });
+            }
+        })
+    }
+    function isNewUser(userId) {
+        return get(child(dbRef, `users/${userId}`)).then((snapshot)=>{
+            if(snapshot.val()===null)
+                return true;
+            else return false;
+        });
+    }
+    document.getElementById('CreateElection').onclick = function() {
+        let files = document.getElementById('selectFiles').files;
+        if (files.length <= 0) {
+            return false;
+        }
+
+        let fr = new FileReader();
+
+        fr.onload = function(e) {
+            const result = JSON.parse(e.target.result);
+            result.forEach((r)=>{
+                console.log(r);
+                update(ref(db, 'elections/' + r.eventName +'/'+r.electionName), {
+                    eventName: r.eventName,
+                    electionName: r.electionName,
+                    candidates: r.candidates,
+                    voters: r.voters,
+                    pendingVoters: r.voters
+
+                })
+            });
+        }
+
+        fr.readAsText(files.item(0));
+        alert("Election Created Successfully");
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[{
+  "eventName": "1COC of abc & Associates",
+  "electionName": "Q2 IRP to RP",
+  "candidates": ["Yes","No","Not Applicable"],
+  "voters": ["emailharshitwalia@gmail.com","sma.gstforce@gmail.com"]
+},
+  {
+    "eventName": "1COC of abc & Associates",
+    "electionName": "Q1 IRP to RP",
+    "candidates": ["Yes","No","Not Applicable"],
+    "voters": ["emailharshitwalia@gmail.com","sma.gstforce@gmail.com"]
+  }
+]
